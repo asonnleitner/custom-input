@@ -3,7 +3,13 @@
     <div class="text-container">
       <CustomInput
         id="customInput"
-        v-model="customInput"
+        v-model="customInput1"
+        label="Custom Label"
+      />
+
+      <CustomInput
+        id="customInput"
+        v-model="customInput2"
         label="Custom Label"
       />
     </div>
@@ -20,8 +26,8 @@ export default {
 
   data() {
     return {
-      customInput: 'Hello',
-      // customInput: '',
+      customInput1: 'Hello',
+      customInput2: '',
     }
   },
 }
